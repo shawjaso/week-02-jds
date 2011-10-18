@@ -6,7 +6,7 @@ describe "Strings" do
 
         lyrics = "  Hello, is it me you're looking for I can see it in your eyes  "
 
-        lyrics.strip.capitalize.should eq "Hello, is it me you're looking for I can see it in your eyes"
+        lyrics.strip.should eq "Hello, is it me you're looking for I can see it in your eyes"
 
     end
 
@@ -20,7 +20,7 @@ describe "Integer" do
     
     it "should be false" do
 
-      1.even?.should eq true
+      1.even?.should eq false
 
     end
 
@@ -35,7 +35,7 @@ describe "Symbol" do
     it "should be false" do
 
       someSymbol = :"An Object"
-      someSymbol.empty?.should eq true
+      someSymbol.empty?.should eq false≈
 
     end
 
